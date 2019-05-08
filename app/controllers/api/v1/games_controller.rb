@@ -5,20 +5,22 @@ class Api::V1::GamesController < ApplicationController
     end
 
     def show
-
         user =  User.find(params[:id])
-        render json: user
+        render json: user 
     end
 
     def create
-        byebug
-        user = User.create(username:params[:username])
-
+        @user = User.create(username:params[:username])
+        
         # create_or_find_by
-        game = Game.create(difficulty:params[:difficulty],high_score: params[:high_score],level:params[:level])
+        @game = Game.create(difficulty: params[:difficulty], high_score: 0,level: 0, score: 0, timer: 0, user_id: @user.id)
 
-        game.user_id = user.id
-       render json: user
+       render json: @user
+    end
+
+    def update
+        user =  User.find(params[:id])
+        render json: user 
     end
 
     private
