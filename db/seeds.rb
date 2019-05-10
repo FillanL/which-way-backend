@@ -5,5 +5,3 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-User.create(username:'Tommy')
-Game.create(user_id: 1, score: 231, high_score: 5000, timer: 60, difficulty: 'easy', level: 2)
