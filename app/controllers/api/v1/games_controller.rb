@@ -10,17 +10,7 @@ class Api::V1::GamesController < ApplicationController
     end
 
     def create
-        @user = User.find_or_create_by(username:params[:username])
 
-        # create_or_find_by
-        # @game = Game.create(difficulty: params[:difficulty], high_score: 0,level: 0, score: 0, timer: 0, user_id: @user.id)
-
-       render json: @user
-    end
-
-    def newgame
-       
-        # byebug
       @game = Game.create(difficulty: params[:difficulty], high_score: 0,level: 0, score: params[:score], timer: 0, user_id: params[:user_id])
 
       if @game.score > @game.high_score
