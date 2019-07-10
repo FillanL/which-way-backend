@@ -1,24 +1,12 @@
-# README
+# Which Way?
+Desktop timed Memory Game using arrow keys
+- https://fillanl.github.io/memory-game-frontend/
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Instructions to get started
+- clone Repository 
+- bundle install
+- rails s to start server
+- since this project is hosted on heroku, you will need to change all fletch urls on the front ent to be reflected to your local host server.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Video Demo
+https://www.youtube.com/watch?v=gw0eGh0L5TA&t=72s
